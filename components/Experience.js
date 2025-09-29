@@ -5,9 +5,9 @@ function Experience() {
         title: 'Business System Analyst',
         company: 'PT Synapsis Synergi Digital',
         period: 'Sep 2024 – Sep 2025',
-        description: 'Contributed to planning and sustainability of multiple projects by leading requirement gathering, defining MVP scope, and creating BRDs and PRDs.',
+        description: 'Spearheaded project planning and sustainability initiatives. Responsible for end-to-end business analysis, from gathering requirements and defining MVP scope to creating comprehensive documentation (BRD, PRD, flowcharts) and ensuring product quality through UAT and exploratory testing.',
         achievements: [
-          'Developed BRDs and PRDs for MVP features across multiple modules',
+          'Improved development efficiency by producing BRDs and PRDs with clear acceptance criteria, reducing clarification requests by 20%',
           'Created flowcharts and process documentation to support development and QA',
           'Collaborated with cross-functional teams (UI/UX, Developers, QA, PM)',
           'Led sprint reviews with users, ensuring direct feedback and alignment',
@@ -22,7 +22,7 @@ function Experience() {
         period: 'May 2024 – Sep 2024',
         description: 'Created technical documentation, BRDs, PRDs, user manuals, and MoM to ensure alignment between stakeholders and development teams.',
         achievements: [
-          'Improved development efficiency by producing BRDs and PRDs with clear acceptance criteria, reducing clarification requests by 20%',
+          'Developed BRDs and PRDs for MVP features across multiple modules',
           'Enhanced client readiness by drafting user manuals and UAT documents used in client-facing demos',
           'Accelerated QA and developer workflow through flowcharts and process documentation that clarified complex requirements',
           'Strengthened stakeholder alignment by documenting MoM and action items, ensuring smoother project progress'
@@ -34,7 +34,7 @@ function Experience() {
         period: 'Sep 2023 – Jan 2024',
         description: 'Supported IoT & Smart Solutions projects by producing system documentation, UML diagrams, and mockups.',
         achievements: [
-          'Improved system clarity by creating UML diagrams and application mockups that accelerated developer understanding',
+          'Improved system clarity and accelerated developer understanding by creating comprehensive UML diagrams and application mockups.',
           'Supported project alignment by producing Terms of Reference and test scenarios used during development',
           'Increased application reliability through manual testing that identified key issues before release',
           'Strengthened client collaboration by documenting MoM, ensuring consistent communication and follow-ups'
