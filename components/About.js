@@ -2,13 +2,13 @@
 function About() {
   try {
     const skills = [
-      { name: 'Requirement Analysis', level: 85 },
-      { name: 'Business Requirement Document (BRD)', level: 85 },
-      { name: 'Product Requirement Document (PRD)', level: 88 },
-      { name: 'User Manuals & Guides', level: 80 },
-      { name: 'Process Flow & UML Diagrams', level: 80 },
-      { name: 'User Acceptance Criteria Document', level: 82 },
-      { name: 'Exploratory testing', level: 85 },
+      { name: 'Requirement Analysis' },
+      { name: 'Business Requirement Document (BRD)' },
+      { name: 'Product Requirement Document (PRD)' },
+      { name: 'User Manuals & Guides' },
+      { name: 'Process Flow & UML Diagrams' },
+      { name: 'User Acceptance Criteria Document' },
+      { name: 'Exploratory testing' },
     ];
 
     const tools = [
@@ -58,14 +58,14 @@ function About() {
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-[var(--text-primary)]">{skill.name}</span>
-                      <span className="text-sm text-[var(--text-secondary)]">{skill.level}%</span>
+                      {/* <span className="text-sm text-[var(--text-secondary)]">{skill.level}%</span> */}
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    {/* <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
-                        className="h-2 rounded-full bg-gradient-to-r from-[var(--primary-color)] to-blue-400 transition-all duration-1000"
+                        className="h-2 rounded-full bg-gradient-to-r from-[var(--primary-color)] to-blue-400 transitions-all duration-1000"
                         style={{ width: `${skill.level}%` }}
                       ></div>
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>
