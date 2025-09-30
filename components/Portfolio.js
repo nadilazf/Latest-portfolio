@@ -17,7 +17,7 @@ function Portfolio() {
         tags: ['PRD', 'Meeting Minutes', 'Process Docs', 'HR Tech'],
         results: ['25% faster feature delivery supported by well-defined PRDs','100% consistency in documentation across sprints and stakeholders', '30% more efficient sprint reviews due to clear MoM and action items','Increased stakeholder alignment by providing structured requirement docs']
       },
-      {Í
+      {
         title: 'E-Recruitment Application – Process Documentation',
         category: 'Process Documentation',
         description: 'Documented recruitment workflows and requirements, producing process documentation and diagrams to support development and QA.',
