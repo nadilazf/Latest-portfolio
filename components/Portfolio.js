@@ -17,7 +17,7 @@ function Portfolio() {
         tags: ['PRD', 'Meeting Minutes', 'Process Docs', 'HR Tech'],
         results: ['25% faster feature delivery supported by well-defined PRDs','100% consistency in documentation across sprints and stakeholders', '30% more efficient sprint reviews due to clear MoM and action items','Increased stakeholder alignment by providing structured requirement docs']
       },
-      {
+      {Í
         title: 'E-Recruitment Application – Process Documentation',
         category: 'Process Documentation',
         description: 'Documented recruitment workflows and requirements, producing process documentation and diagrams to support development and QA.',
@@ -34,6 +34,12 @@ function Portfolio() {
         results: ['35% improvement in requirement clarity across Disease Management and Medical Check Up modules','30% faster sprint readiness due to well-documented BRDs and PRDs','25% reduction in QA rework as test scenarios were supported with accurate flowcharts']
       }
     ];
+
+    const categories = ['All', ...new Set(projects.map(project => project.category))];
+    const [selectedCategory, setSelectedCategory] = React.useState('All');
+    const filteredProjects = selectedCategory === 'All' 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
     
     return (
       <section id="portfolio" className="py-20 bg-white" data-name="portfolio" data-file="components/Portfolio.js">
