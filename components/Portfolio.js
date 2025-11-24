@@ -3,35 +3,31 @@ function Portfolio() {
     const projects = [
       {
         title: 'Superapps – Employee Self Service (ESS)',
-        category: 'Process Documentation',
-        description: 'Created BRDs, PRDs, and User Manual Guides for Employee Self Service modules including Business Travel, Medical Claim, Leave/Permission requests, Payroll Calculation, and Approval Flows to ensure clarity for both stakeholders and end-users.',
-        image: '/images/superapps-ess.png',
-        tags: ['BRD', 'PRD', 'User Manual', 'Employee Self Service', 'System Requirements'],
-        results: ['30% faster sprint readiness supported by well-structured BRDs & PRDs','25% fewer requirement-related clarifications during development','35% increase in self-service feature adoption among employees']
+        description: 'Key features delivered include a Dynamic Approval Matrix handling complex cross-project routing for Leave & Permission requests, an Advanced Business Travel module integrated with Traveloka API covering full-cycle workflows including Booking, Refund, and Reschedule logic, and Centralized Operations for Attendance and complex Benefit Claims Medical, Optical, Donations.',
+        // image: '/images/superapps-ess.png',
+        tags: ['BRD', 'PRD', 'FAQ Document', 'Business and Technical Flowchart', 'User Acceptance Criteria', 'User Manual Guide'],
+        results: ['Successfully supported daily operations for 5,300+ active users across 8 mining projects with zero critical downtime post-launch.','Reduced manual administrative workload by automating complex Business Travel.','Accelerated approval turnaround time by implementing a Dynamic Matrix engine for complex cross-department routing.', 'Reduced development clarifications by 25% through precise UAC definitions and comprehensive documentation.']
       },
       {
-        title: 'Learning Management System (HR)',
-        category: 'Process Documentation',
-        description: 'Documented requirements, PRDs, and MoM for HR Learning Management System to support feature development and sprint planning.',
-        image: '/images/lms.png',
-        tags: ['PRD', 'Meeting Minutes', 'Process Docs', 'HR Tech'],
-        results: ['25% faster feature delivery supported by well-defined PRDs','100% consistency in documentation across sprints and stakeholders', '30% more efficient sprint reviews due to clear MoM and action items','Increased stakeholder alignment by providing structured requirement docs']
+        title: 'Remote Attendance App (RAA)',
+        description: 'Delivering detailed PRDs, defining strict User Acceptance Criteria (UAC), producing User Manuals, and executing the Live Production Release to ensure seamless synchronization with the core ESS ecosystem. The scope encompassed critical modules including Attendance logging, complex Roster Scheduling, System Settings, and a flexible Project Configuration engine designed to customize attendance rules for specific mining project sites.',
+        // image: '/images/lms.png',
+        tags: ['PRD', 'Requirement analysis', 'User Manual Guide', 'UAC'],
+        results: ['Achieved 100% data consistency between the Remote App and Core ESS ecosystem through real-time synchronization and strict validation logic','Streamlined complex workforce scheduling by implementing a digital Roster Management module tailored for mining shift patterns', 'Accelerated user adoption across remote sites by providing comprehensive User Manual Guides and clear documentation.']
       },
       {
-        title: 'E-Recruitment Application – Process Documentation',
-        category: 'Process Documentation',
-        description: 'Documented recruitment workflows and requirements, producing process documentation and diagrams to support development and QA.',
-        image: '/images/erecruitment.png',
-        tags: ['Process Documentation', 'Recruitment Workflow', 'Flowchart', 'Requirement Docs'],
-        results: ['30% clearer hiring workflows through standardized process documentation','20% reduction in miscommunication during sprint reviews and testing phases','Improved recruitment feature delivery by ensuring QA had accurate process references'],
+        title: 'E-Recruitment Application',
+        description: 'Managed the development lifecycle for a comprehensive E-Recruitment Platform by delivering detailed BRDs, PRDs, User Acceptance Criteria. Key modules delivered include Job Posting fully integrated with the Candidate database, a Dynamic Workflow Engine allowing flexible customization of interview stages, Interview Scheduling, Candidate Selection, a Candidate Reassignment feature for optimizing talent placement across different roles, and Hiring Budgeting.',
+        // image: '/images/erecruitment.png',
+        tags: ['BRD', 'PRD', 'Flowchart', 'User Acceptance Criteria'],
+        results: ['Reduced Time-to-Hire by streamlining the entire recruitment lifecycle from Job Posting to Candidate Selection','Enhanced operational agility by delivering a Dynamic Workflow Engine that allows HR to customize interview stages for different job levels without technical support','Eliminated manual scheduling conflicts by integrating an Interview Scheduling module that syncs directly with interviewer availability'],
       },
       {
-        title: 'Medic & Health Monitoring – Process Documentation',
-        category: 'Process Documentation',
-        description: 'Created BRDs, PRDs, and detailed flowcharts for Disease Management, Medical Check Up, Medical Record, Medicine Request, and Scheduling features to align business needs with development and QA requirements.',
-        image: '/images/medic-system.png',
-        tags: ['Process Documentation', 'BRD', 'PRD', 'Flowchart', 'Healthcare System'],
-        results: ['35% improvement in requirement clarity across Disease Management and Medical Check Up modules','30% faster sprint readiness due to well-documented BRDs and PRDs','25% reduction in QA rework as test scenarios were supported with accurate flowcharts']
+        title: 'Medic & Health Monitoring',
+        description: 'Delivering detailed BRD, User Acceptance Creation definition, and PRD for a comprehensive Occupational Health & Monitoring System. Key modules include an automated Medical Checkup (MCU) Scheduling engine for periodic employee screening, FAR (First Aid Room) Visit Management, and Clinical Follow-up tracking. A critical feature is the External Medical Record module, which functions as a validation gate for the ESS Benefit Claim system, requiring Doctor verification before any medical reimbursement can be processed.',
+        // image: '/images/medic-system.png',
+        tags: ['BRD', 'Flowchart', 'User Acceptance Criteria', 'Minutes of Meeting Documentation'],
+        results: ['Ensured 100% alignment between Business Stakeholders and Engineering teams through detailed MOMs and signed-off requirement documents','Streamlined the verification workflow between HR and Medical teams by digitizing the approval process, replacing manual cross-checks of medical receipts','Turned meeting discussions into executed tasks through rigorous Action Item tracking']
       }
     ];
 
@@ -53,7 +49,7 @@ function Portfolio() {
             </p>
           </div>
 
-          <div className="flex justify-center mb-12">
+          {/* <div className="flex justify-center mb-12">
             <div className="flex flex-wrap gap-2 p-1 bg-[var(--secondary-color)] rounded-lg">
               {categories.map((category) => (
                 <button
@@ -69,13 +65,13 @@ function Portfolio() {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="grid md:grid-cols-2 gap-8">
             {filteredProjects.map((project) => (
               <div key={project.title} className="card">
                 <div className="space-y-4">
-                  <div className="relative overflow-hidden rounded-lg">
+                  {/* <div className="relative overflow-hidden rounded-lg">
                     <img 
                       src={project.image}
                       alt={project.title}
@@ -86,7 +82,7 @@ function Portfolio() {
                         {project.category}
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                   
                   <div className="space-y-3">
                     <h3 className="text-xl font-semibold text-[var(--accent-color)]">
